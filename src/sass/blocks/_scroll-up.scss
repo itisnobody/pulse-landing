@@ -1,0 +1,11 @@
+.scroll-up {
+  display: none;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  right: 56px;
+  bottom: 25px;
+  @include max575 {
+    right: 15px;
+  }
+}

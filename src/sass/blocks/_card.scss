@@ -1,0 +1,30 @@
+.card {
+  color: #0D0D0D;
+  width: 100%;
+  max-width: 262px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__img {
+    width: 70px;
+  }
+  img {
+    width: 100%;
+  }
+  &__title {
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  &__description {
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    a {
+      color: #FF0000;
+    }
+  }
+}

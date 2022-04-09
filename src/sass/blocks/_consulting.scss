@@ -1,0 +1,25 @@
+.consulting {
+  background: url('../img/consulting-bg.jpg') #4B4B4B center center/cover no-repeat;
+  padding: 100px 0 108px;
+  overflow: hidden;
+  &__description {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 8px;
+    @media all and (max-width: 575px) {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+  &__form {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 40px;
+
+		@include max575 {
+      margin: 40px auto 0;
+		}
+  }
+}

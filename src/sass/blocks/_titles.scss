@@ -1,0 +1,21 @@
+.title {
+	color: #0D0D0D;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+	@media all and (max-width: 575px) {
+		font-size: 24px;
+	}
+	&--left {
+		color: #FFFFFF;
+		font-size: 36px;
+		line-height: 1.5;
+		text-align: left;
+		@media all and (max-width: 575px) {
+			font-size: 20px;
+			text-align: center;
+		}
+	}
+}

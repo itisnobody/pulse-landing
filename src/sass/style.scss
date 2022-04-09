@@ -1,0 +1,45 @@
+@import 'base/variables';
+@import 'vendors/bootstrap-reboot.min.scss';
+@import 'vendors/animate.scss';
+@import 'vendors/slick.scss';
+@import 'base/mixins';
+@import 'base/fonts';
+
+html,
+body {
+	font: normal 500 17px/24px 'Museo Sans Cyrl', sans-serif;
+	background-color: #fff;
+}
+
+button {
+	border: none;
+}
+
+i {
+	font-style: normal;
+}
+h1, h2, h3, h4, p {
+	margin: 0;
+}
+
+.container {
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+@import 'blocks/buttons';
+@import 'blocks/titles';
+@import 'blocks/forms';
+@import 'blocks/card';
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/advantage';
+@import 'blocks/consulting';
+@import 'blocks/carousel';
+@import 'blocks/catalog';
+@import 'blocks/catalog-item';
+@import 'blocks/coments';
+@import 'blocks/footer';
+@import 'blocks/overlay';
+@import 'blocks/scroll-up';

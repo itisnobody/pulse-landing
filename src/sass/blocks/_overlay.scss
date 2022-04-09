@@ -1,0 +1,71 @@
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0,0,0, .6);
+  backdrop-filter: blur(1px);
+}
+.modal {
+  display: none;
+  width: 100%;
+  max-width: 380px;
+  background-color: #F2F2F2;
+  padding: 35px 20px 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &__title {
+    color: #0D0D0D;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    color: #0D0D0D;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+  }
+  &__form {
+    margin-top: 26px;
+  }
+  &__close {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    font-size: 0;
+    line-height: 1;
+    border: none;
+    padding: 0;
+    width: 21px;
+    height: 21px;
+    background-color: transparent;
+    @include max575 {
+      top: 5px;
+      right: 5px;
+    }
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotateZ(45deg);
+      background-color: $primary-color;
+    }
+    &::after {
+      transform: translate(-50%, -50%) rotateZ(-45deg);
+    }
+  }
+}
